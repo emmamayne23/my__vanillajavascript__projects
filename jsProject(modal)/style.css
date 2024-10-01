@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background: url('./hero-bcg.jpeg') no-repeat center center/cover;
+}
+
+
+.modal-btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.modal-div {
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    height: 200px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px;
+    display: grid;
+    place-items: center;
+    background-color: white;
+}
+
+.modal-btn:hover {
+    background-color: gray;
+    color: white;
+    border-color: gray;
+}
+
+.modal-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 3px;
+    width: 150px;
+    height: 50px;
+    background: white;
+    border: none;
+    position: absolute;
+    top: 45%;
+    left: 35%;
+    
+
+    animation-name: slide-down;
+    animation-duration: 0.9s;
+    
+}
+
+.modal-container {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.active {
+    display: block;
+}
+
+
+.close-btn {
+    background: transparent;
+    border: none;
+    color: red;
+}
+
+@keyframes slide-down {
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+
+    to {
+        top: 45%;
+        opacity: 1;
+    }
+}

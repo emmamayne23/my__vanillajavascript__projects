@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+img {
+    width: 90%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.container {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    background-color: white;
+}
+
+
+.headings {
+    display: flex;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    overflow: hidden;
+}
+
+.btn {
+    padding: 15px 41px;
+    background-color: rgb(203, 195, 195);
+    border: none;
+    cursor: pointer;
+    font-size: large;
+    letter-spacing: 2px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    color: burlywood;
+    background-color: cornflowerblue;
+}
+
+.headings .active {
+    background-color: white;
+
+}
+.content {
+    padding: 30px 20px;
+    display: none;
+}
+
+.content h4 {
+    margin: 0 0 20px 0;
+    letter-spacing: 2px;
+}
+
+.content p {
+    word-spacing: 2px;
+}
+
+.content.active {
+    display: block;
+}

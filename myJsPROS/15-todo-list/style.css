@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    /* height: 100vh; */
+}
+
+h1 {
+    margin: 50px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    min-width: calc(100% - 100px);
+    max-width: 500px;
+    height: 100px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    position: relative;
+    margin: 10px auto;
+}
+
+.task-input input {
+    height: 25px;
+    outline-color: green;
+}
+
+.add-task {
+    padding: 5px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    border-color: green;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.add-task:hover {
+    background-color: rgb(6, 69, 6);
+}
+
+.remove-all {
+    color: red;
+    cursor: pointer;
+    font-size: 0.825rem;
+    position: absolute;
+    top: 42px;
+    right: 12px;
+
+    display: none;
+}
+
+.task-item {
+    width: 390px;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    margin: 10px 0;
+}
+
+.task {
+    /* border: 1px solid red; */
+    border-radius: 5px;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 320px auto auto;
+    align-items: center;
+
+}
+
+
+.check-btn {
+    padding: 5px;
+    background-color: white;
+    color: rgb(169, 169, 2);
+    cursor: pointer;
+    border-color: rgb(169, 169, 2);
+    border-radius: 4px;
+    transition: 0.3s;
+    margin: 0 5px;
+}
+
+.check-btn:hover {
+    color: white;
+    background-color: rgb(169, 169, 2);
+    border-color: rgb(169, 169, 2);
+}
+
+.del-btn {
+    padding: 5px;
+    background-color: white;
+    color: rgb(145, 0, 0);
+    cursor: pointer;
+    border-color: rgb(145, 0, 0);
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.del-btn:hover {
+    color: white;
+    background-color: rgb(145, 0, 0);
+    border-color: rgb(145, 0, 0);
+}
+

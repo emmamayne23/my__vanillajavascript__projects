@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+
+.underline {
+    width: 70px;
+    height: 5px;
+    background-color: rgb(25, 140, 140);
+    margin: 10px auto;
+}
+
+article {
+    margin-top: 50px;
+}
+
+img {
+    border-radius: 50%;
+}
+
+.review {
+
+    width: 350px;
+    height: 400px;
+    box-shadow: 0 0 6px rgb(72, 65, 65);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#job {
+    color: rgb(27, 178, 178);
+    text-transform: uppercase;
+}
+
+#info {
+    text-align: center;
+    line-height: 1.25rem;
+}
+
+button {
+    background-color: transparent;
+    border-color: rgb(74, 126, 126);
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 10px;
+}

@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+body {
+    background: url(./clouds-bg-color.jpg) no-repeat center center/ cover;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+
+}
+
+.form-container {
+    background-color: rgb(255, 255, 255);
+    margin: 10px auto;
+
+}
+
+.form {
+    padding: 40px;
+    width: 400px;
+}
+
+.form div {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+span {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+
+}
+
+input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    border-color: rgb(188, 122, 188);
+}
+
+input:focus {
+    background-color: transparent;
+}
+
+p {
+    color: rgb(95, 91, 91);
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(227, 58, 87);;
+}
+
+label {
+    color: rgb(95, 91, 91);
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+h3 {
+    font-weight: 900;
+    font-size: 25px;
+}
+
+
+button {
+    background-color: rgb(227, 58, 87);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    width: 100%;
+    border-radius: 20px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: rgb(121, 18, 18);
+}
+
+img {
+    display: none;
+}
+
+
+@media screen and (min-width: 899px) {
+    img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .image {
+        width: 50%;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .form-container {
+        width: 80%;
+        display: flex;
+        height: 90vh;
+        border-radius: 10px;
+        
+    }
+
+    .form {
+
+        display: grid;
+        place-items: center;
+    }
+}
+
